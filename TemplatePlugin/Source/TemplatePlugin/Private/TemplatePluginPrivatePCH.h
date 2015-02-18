@@ -6,3 +6,5 @@
 // add includes for headers that are used in most of your module's source files though.
 
 DECLARE_LOG_CATEGORY_EXTERN(LogTemplatePlugin, Log, All);
+
+#include "TemplatePluginClasses.h"
