@@ -20,6 +20,3 @@ void FTemplatePlugin::StartupModule()
 void FTemplatePlugin::ShutdownModule()
 {
 }
-
-
-

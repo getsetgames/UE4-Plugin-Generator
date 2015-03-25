@@ -21,6 +21,8 @@ namespace UnrealBuildTool.Rules
 				new string[]
 				{
 					"Core",
+					"CoreUObject",
+					"Engine"
 					// ... add other public dependencies that you statically link with here ...
 				}
 				);
@@ -38,6 +40,40 @@ namespace UnrealBuildTool.Rules
 					// ... add any modules that your module loads dynamically here ...
 				}
 				);
+				
+			PrivateIncludePathModuleNames.AddRange(
+				new string[]
+				{
+					"Settings"
+				}
+				);
+			
+			// if (Target.Platform == UnrealTargetPlatform.IOS) {
+			// 	PublicAdditionalFrameworks.Add(
+			// 		new UEBuildFramework(
+			// 			"ExampleFramework",
+			// 			"../../lib/iOS/ExampleFramework.embeddedframework.zip"
+			// 		)
+			// 	);
+			//
+			// 	PublicFrameworks.AddRange(
+			// 		new string[]
+			// 		{
+			// 			"AudioToolbox",
+			// 			"CFNetwork",
+			// 			"CoreGraphics",
+			// 			"CoreLocation",
+			// 			"MobileCoreServices",
+			// 			"QuartzCore",
+			// 			"Security",
+			// 			"StoreKit",
+			// 			"SystemConfiguration"
+			// 		}
+			// 	);
+			//
+			// 	AddThirdPartyPrivateStaticDependencies(Target, "libsqlite3");
+			// 	AddThirdPartyPrivateStaticDependencies(Target, "libz");
+			// }
 		}
 	}
 }

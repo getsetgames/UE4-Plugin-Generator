@@ -1,5 +1,8 @@
 #pragma once
 
+#include "CoreUObject.h"
+#include "Engine.h"
+
 #include "ITemplatePlugin.h"
 
 // You should place include statements to your module's private header files here.  You only need to
