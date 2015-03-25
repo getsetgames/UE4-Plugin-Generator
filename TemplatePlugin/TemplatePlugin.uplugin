@@ -6,7 +6,7 @@
 	"VersionName" : "1.0",
 	"CreatedBy" : "Your Company",
 	"CreatedByURL" : "http://epicgames.com",
-	"EngineVersion" : "4.2.0",
+	"EngineVersion" : "4.7.0",
 	"Description" : "This plugin will do something, some day.",
 	"Category" : "Developer",
 	"EnabledByDefault" : false,
