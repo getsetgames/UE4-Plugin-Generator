@@ -1,7 +1,14 @@
+using System.IO;
+
 namespace UnrealBuildTool.Rules
 {
 	public class TemplatePlugin : ModuleRules
 	{
+		private string ModulePath
+		{
+			get { return Path.GetDirectoryName( RulesCompiler.GetModuleFilename( this.GetType().Name ) ); }
+		}
+		
 		public TemplatePlugin(TargetInfo Target)
 		{
 			PublicIncludePaths.AddRange(
