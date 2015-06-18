@@ -1,21 +1,23 @@
 {
-	"FileVersion" : 3,
-	
-	"FriendlyName" : "TemplatePlugin",
-	"Version" : 1,
-	"VersionName" : "1.0",
-	"CreatedBy" : "Your Company",
-	"CreatedByURL" : "http://epicgames.com",
-	"EngineVersion" : "4.7.0",
-	"Description" : "This plugin will do something, some day.",
-	"Category" : "Developer",
-	"EnabledByDefault" : false,
-	
-	"Modules" :
-	[
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "TemplatePlugin",
+	"Description": "This plugin will do something, some day.",
+	"Category": "Developer",
+	"CreatedBy": "Your Company",
+	"CreatedByURL": "http://example.com",
+	"DocsURL": "http://example.com/docs",
+	"MarketplaceURL": "",
+	"Modules": [
 		{
-			"Name" : "TemplatePlugin",
-			"Type" : "Runtime"
+			"Name": "TemplatePlugin",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
 		}
-	]
+	],
+	"EnabledByDefault": false,
+	"CanContainContent": false,
+	"IsBetaVersion": false,
+	"Installed": false
 }
